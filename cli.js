@@ -1,22 +1,18 @@
 #!/usr/bin/env node
-'use strict';
-const React = require('react');
-const importJsx = require('import-jsx');
-const {render} = require('ink');
-const meow = require('meow');
+"use strict";
+const React = require("react");
+const importJsx = require("import-jsx");
+const { render } = require("ink");
+const meow = require("meow");
 
-const ui = importJsx('./ui');
+const ui = importJsx("./ui");
 
 const cli = meow(`
 	Usage
-	  $ npmrum
+		$ npmrum
 
-	Options
-		--name  Your name
-
-	Examples
-	  $ npmrum --name=Jane
-	  Hello, Jane
+		[tab] to select script
+		[return] to run script
 `);
 
 render(React.createElement(ui, cli.flags));
