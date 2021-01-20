@@ -11,7 +11,8 @@
 	},
 	"files": [
 		"cli.js",
-		"ui.js"
+		"ui.js",
+		"./actions/runScript.js"
 	],
 	"dependencies": {
 		"import-jsx": "^4.0.0",
