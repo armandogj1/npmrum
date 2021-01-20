@@ -7,7 +7,7 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "echo 'no test available'"
 	},
 	"files": [
 		"cli.js",
